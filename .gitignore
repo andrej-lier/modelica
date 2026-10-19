@@ -1,0 +1,49 @@
+# --- Generated data (reproducible via scripts) ---
+data/
+
+# --- OpenModelica / Dymola build artifacts ---
+*.fmu
+*.mat
+*.csv.tmp
+*_res.mat
+*_res.csv
+*_info.json
+*_init.xml
+*.makefile
+*.libs
+*.log
+*.o
+*.c
+*.h
+*.exe
+*.bak-mo
+OMEdit*/
+modelica/**/build/
+dsin.txt
+dsres.mat
+dslog.txt
+buildlog.txt
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# --- ML artifacts ---
+*.pt
+*.pth
+runs/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
