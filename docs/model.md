@@ -13,7 +13,13 @@ _Averaged model (no switching), constant efficiency or efficiency map._
 _DC equivalent model: Kv, R, L, rotor inertia, friction._
 
 ## Propeller
-_Thrust T = C_T ρ n² D⁴, power P = C_P ρ n³ D⁵._
+`Components.Propeller`, test model `Examples.PropellerTest`.
+
+- Thrust T = C_T ρ n|n| D⁴, shaft power P = C_P ρ n³ D⁵, torque τ = P/ω = C_P ρ n|n| D⁵ / (2π), with n in rev/s.
+- Static coefficients (advance ratio J ≈ 0): valid for hover; climb and cruise inflow reduce thrust
+  and are not yet modelled.
+- No propeller inertia in the component; it belongs to the rotor inertia of the motor.
+- Parameters: see [parameters.md](parameters.md).
 
 ## Mission / load
 _Thrust demand from flight profile (hover, climb, cruise); vehicle mass as parameter._

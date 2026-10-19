@@ -12,6 +12,9 @@ and used as ground truth to compare **surrogate models**:
 | Model order reduction | POD, DMD | planned |
 | Data-driven | Neural network (PyTorch), optionally physics-informed | planned |
 
+Reference vehicle: **2 kg inspection quadcopter** (4 × T-Motor MN3508 KV580, 13×4.4 in props, 4S LiPo).
+Parameters and their sources: [docs/parameters.md](docs/parameters.md).
+
 Comparison criteria: **accuracy vs. runtime vs. extrapolation** beyond the training data.
 
 ## Key result
@@ -46,7 +49,7 @@ Further steps (FMU build, data generation, training, evaluation) will be added p
 ## Roadmap
 
 - [x] Phase 0: repository skeleton, Python environment
-- [ ] Phase 1: Modelica components + system model, hover scenario, plausibility plots
+- [ ] Phase 1 (in progress: propeller done): Modelica components + system model, hover scenario, plausibility plots
 - [ ] Phase 2: FMU export, Python wrapper, parameter study, CI (pytest + ruff)
 - [ ] Phase 3: POD/DMD reduced-order model
 - [ ] Phase 4: neural-network surrogate (PyTorch), optional PINN; comparison table

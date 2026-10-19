@@ -34,3 +34,6 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "NPY"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["multicopter_surrogates"]
